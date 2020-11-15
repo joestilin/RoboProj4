@@ -47,11 +47,11 @@ $ cd /RoboProj4/catkin_ws
 $ roslaunch my_robot world.launch
 ```
 
-2. Open a new terminal and run ```teleop_keyboard_twist.py```
+2. Open a new terminal and launch ```teleop.launch```
 ```bash
 $ cd /RoboProj4/catkin_ws
 $ source devel/setup.bash
-$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+$ roslaunch teleop_twist_keyboard teleop.launch
 ```
 3. Open a new terminal and launch ```mapping.launch```
 ```bash
@@ -59,8 +59,9 @@ $ cd /RoboProj4/catkin_ws
 $ source devel/setup.bash
 $ roslaunch my_robot mapping.launch
 ```
-You can move around the Gazebo world with keyboard commands. The rtab ROS node will store its
-database result in the root of your directory in a file called ```rtabmap.db```
+You can move around the Gazebo world with keyboard commands in the terminal
+running the teleop node. The rtab ROS node will store its database result in 
+the root of your directory in a file called ```rtabmap.db```.
 
 4. View result with ```rtabmap-databaseViewer```
 
